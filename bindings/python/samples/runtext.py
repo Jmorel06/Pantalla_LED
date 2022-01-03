@@ -17,6 +17,12 @@ class RunText(SampleBase):
         textColor = graphics.Color(255, 255, 0)
         pos = offscreen_canvas.width
         my_text = self.args.text
+        
+        print("offscreen_canvas")
+        print("font")
+        print("pos")
+        print("my_text")
+        
 
         while True:
             offscreen_canvas.Clear()
