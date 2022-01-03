@@ -18,10 +18,10 @@ class RunText(SampleBase):
         pos = offscreen_canvas.width
         my_text = self.args.text
         
-        print("offscreen_canvas")
-        print("font")
-        print("pos")
-        print("my_text")
+        print(offscreen_canvas)
+        print(font)
+        print(pos)
+        print(my_text)
         
 
         while True:
