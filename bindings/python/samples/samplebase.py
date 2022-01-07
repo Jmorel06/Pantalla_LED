@@ -69,6 +69,7 @@ class SampleBase(object):
           options.drop_privileges=False
 
         self.matrix = RGBMatrix(options = options)
+        self.matrix.setTextSize(2)
 
         try:
             # Start loop
