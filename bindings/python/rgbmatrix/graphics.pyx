@@ -41,6 +41,7 @@ cdef class Font:
         def __get__(self): return self.__font.baseline()
 
 def DrawText(core.Canvas c, Font f, int x, int y, Color color, text):
+    self.matrix.setTextSize(2)
     return cppinc.DrawText(c.__getCanvas(), f.__font, x, y, color.__color, text.encode('utf-8'))
 
 def DrawCircle(core.Canvas c, int x, int y, int r, Color color):
