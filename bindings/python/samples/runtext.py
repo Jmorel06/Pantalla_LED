@@ -11,10 +11,11 @@ class RunText(SampleBase):
         self.parser.add_argument("-t", "--text", help="The text to scroll on the RGB LED panel", default="Hello world!")
 
     def run(self):
+        matrix.setTextSize(2);
         offscreen_canvas = self.matrix.CreateFrameCanvas()
         font = graphics.Font()
         font.LoadFont("../../../fonts/7x13.bdf")
-        textColor = graphics.Color(255, 255, 0)
+        textColor = graphics.Color(255, 0, 0)
         pos = offscreen_canvas.width
         my_text = self.args.text
                
