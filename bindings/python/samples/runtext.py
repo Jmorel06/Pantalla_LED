@@ -18,8 +18,6 @@ class RunText(SampleBase):
         pos = offscreen_canvas.width
         my_text = self.args.text
         
-        print(offscreen_canvas)
-        print(font)
         
 
         while True:
@@ -31,7 +29,7 @@ class RunText(SampleBase):
 
             time.sleep(0.05)
             offscreen_canvas = self.matrix.SwapOnVSync(offscreen_canvas)
-            print(offscreen_canvas)
+            
 
 
 # Main function
